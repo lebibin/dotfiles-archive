@@ -1,0 +1,14 @@
+[user]
+  name = Kevin Candelaria
+  email = kevdashdev@gmail.com
+[alias]
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  df = diff --color-words
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[apply]
+	whitespace = nowarn
+[core]
+	excludesfile = ~/.gitignore
