@@ -28,6 +28,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'lilydjwg/colorizer'
 Plugin 'gregsexton/MatchTag'
 Plugin 'vim-scripts/matchit.zip'
+Plugin 'airblade/vim-gitgutter'
 
 " Define color schemes
 Plugin 'sjl/badwolf'
