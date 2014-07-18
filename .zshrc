@@ -8,7 +8,7 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(capistrano colorize command-not-found gem git bundler ssh-agent sublime virtualenv)
 
 export PATH="/usr/local/bin:$PATH"
-export EDITOR='subl'
+export EDITOR='vim'
 export LANGUAGE=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
