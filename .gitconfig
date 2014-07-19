@@ -12,3 +12,4 @@
 	whitespace = nowarn
 [core]
 	excludesfile = ~/.gitignore
+	autocrlf = true
