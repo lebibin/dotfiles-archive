@@ -7,6 +7,9 @@ DISABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 plugins=(capistrano colorize command-not-found gem git bundler ssh-agent sublime virtualenv)
 
+# Here be the aliases
+alias pull='git pull --rebase origin master'
+
 export PATH="/usr/local/bin:$PATH"
 export EDITOR='vim'
 export LANGUAGE=en_US.UTF-8
