@@ -9,6 +9,7 @@
 	diff = auto
 	status = auto
 	branch = auto
+  ui = true
 [apply]
 	whitespace = nowarn
 [core]
