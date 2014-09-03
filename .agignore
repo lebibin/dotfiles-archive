@@ -1,3 +1,7 @@
-log
-tags
-tmp
+ tmp
+ log
+ chef
+ coverage
+ perf
+ spec/vcr
+ vendor/
