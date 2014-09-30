@@ -32,7 +32,8 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'pangloss/vim-javascript'
 Plugin 'claco/jasmine.vim'
 Plugin 'burnettk/vim-angular'
-
+Plugin 'tpope/vim-haml'
+Plugin 'hail2u/vim-css3-syntax'
 " Define color schemes
 Plugin 'sjl/badwolf'
 
