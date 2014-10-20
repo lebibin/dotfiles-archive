@@ -65,7 +65,7 @@ let g:badwolf_tabline = 0
 let g:badwolf_html_link_underline = 0
 let g:badwolf_css_props_highlight = 1
 set background=dark
-colorscheme badwolf
+colorscheme Tomorrow-Night-Eighties
 
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
 if executable('ag')

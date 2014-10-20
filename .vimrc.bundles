@@ -38,6 +38,8 @@ Plugin 'jelera/vim-javascript-syntax'
 Plugin 'nathanaelkane/vim-indent-guides'
 " Define color schemes
 Plugin 'sjl/badwolf'
+Plugin 'w0ng/vim-hybrid'
+Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 
 call vundle#end()
 
