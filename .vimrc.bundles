@@ -40,6 +40,8 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'sjl/badwolf'
 Plugin 'w0ng/vim-hybrid'
 Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
+" Wakawakawakatime
+Bundle 'wakatime/vim-wakatime'
 
 call vundle#end()
 
