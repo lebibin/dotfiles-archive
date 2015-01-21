@@ -22,6 +22,10 @@ set shiftwidth=2
 set shiftround
 set smartindent
 
+" Fileformat
+set fileformat=unix
+set fileformats=unix,dos
+
 " Display extra whitespace
 set list listchars=tab:»·,trail:·
 
