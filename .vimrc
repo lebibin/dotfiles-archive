@@ -120,4 +120,8 @@ set lazyredraw
 " http://ideasintosoftware.com/vim-productivity-tips/
 set relativenumber
 
+" http://ideasintosoftware.com/history-is-a-tree/
+set undofile
+set undodir=~/.vim/undodir
+
 vmap <Leader>b :<C-U>!git blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p <CR>
