@@ -36,6 +36,7 @@ Plugin 'hail2u/vim-css3-syntax'
 Plugin 'pangloss/vim-javascript'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'Valloric/YouCompleteMe'
 " Define color schemes
 Plugin 'sjl/badwolf'
 Plugin 'w0ng/vim-hybrid'
