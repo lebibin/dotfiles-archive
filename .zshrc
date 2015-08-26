@@ -22,6 +22,7 @@ export LC_ALL=en_US.UTF-8
 
 if [[ -s $HOME/.rvm/scripts/rvm ]] ; then source $HOME/.rvm/scripts/rvm ; fi
 source $ZSH/oh-my-zsh.sh
+source ~/.git-flow-completion.zsh
 PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
 PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH" # Add Postgres.app to PATH
 ### Added by the Heroku Toolbelt
