@@ -14,7 +14,7 @@
   whitespace = nowarn
 [core]
   excludesfile = ~/.gitignore
-  editor = vim
+  editor = /Applications/MacVim.app/Contents/MacOS/Vim
   autocrlf = false
 [push]
         # See `git help config` (search for push.default)
