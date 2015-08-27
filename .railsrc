@@ -1,0 +1,2 @@
+-d postgresql
+-m https://raw.githubusercontent.com/mattbrictson/rails-template/master/template.rb
