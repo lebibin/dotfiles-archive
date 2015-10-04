@@ -24,7 +24,7 @@ export LC_ALL=en_US.UTF-8
 # if [[ -s $HOME/.rvm/scripts/rvm ]] ; then source $HOME/.rvm/scripts/rvm ; fi
 # PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
 export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+eval "$(rbenv init - zsh)"
 
 source $ZSH/oh-my-zsh.sh
 source ~/.git-flow-completion.zsh
