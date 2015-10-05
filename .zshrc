@@ -9,6 +9,7 @@ plugins=(capistrano colorize command-not-found gem git bundler ssh-agent sublime
 
 # Here be the aliases
 alias pull='git pull --rebase origin master'
+alias pulld='git pull --rebase origin development'
 alias fs='foreman start'
 
 export PATH="/usr/local/bin:$PATH"
