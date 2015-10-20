@@ -5,7 +5,7 @@ DISABLE_AUTO_UPDATE="true"
 DISABLE_LS_COLORS="true"
 DISABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
-plugins=(capistrano colorize command-not-found gem git bundler ssh-agent sublime virtualenv zsh-syntax-highlighting)
+plugins=(bundler capistrano colorize command-not-found gem git osx ssh-agent sublime virtualenv zsh-syntax-highlighting)
 
 # Here be the aliases
 alias pull='git pull --rebase origin master'
