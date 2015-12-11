@@ -11,6 +11,7 @@ plugins=(bundler capistrano catimg colorize command-not-found gem git osx ssh-ag
 alias pull='git pull --rebase origin master'
 alias pulld='git pull --rebase origin development'
 alias fs='foreman start'
+alias pi='pod install --verbose --no-repo-update'
 
 export PATH="/usr/local/bin:$PATH"
 export EDITOR='vim'
