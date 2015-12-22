@@ -92,6 +92,8 @@ nnoremap <Down> :echo "Use j"<CR>
 
 let g:syntastic_check_on_open=1
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
+let g:syntastic_javascript_checkers = ['standard']
+autocmd bufwritepost *.js silent !standard % --format
 
 " Override certain sections of airline
 call airline#parts#define_function('syntaxitem','SyntaxItem')
