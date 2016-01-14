@@ -27,6 +27,10 @@ export HISTFILESIZE=$HISTSIZE;
 export HISTCONTROL=ignoredups;
 export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help";
 
+# Let's GO!
+export GOPATH=$HOME/Code/go
+export PATH="$GOPATH/bin:$PATH"
+
 # Use rbenv instead
 # if [[ -s $HOME/.rvm/scripts/rvm ]] ; then source $HOME/.rvm/scripts/rvm ; fi
 # PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
