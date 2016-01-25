@@ -13,6 +13,14 @@ alias pulld='git pull --rebase origin development'
 alias fs='foreman start'
 alias pi='pod install --verbose --no-repo-update'
 
+# Thanks reddit! (͡° ͜ʖ ͡°)
+# https://www.reddit.com/r/vim/comments/42fwjx/when_vim_leaves_a_trail/cza0azv
+alias :wq="echo \"This isn't vim, asshole!\""
+alias :wq!=:wq
+alias :q=:wq
+alias :qa=:wq
+alias :q!=:wq
+
 export PATH="/usr/local/bin:$PATH"
 export EDITOR='vim'
 export LANGUAGE=en_US.UTF-8
