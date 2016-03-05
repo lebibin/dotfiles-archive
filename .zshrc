@@ -47,6 +47,6 @@ eval "$(rbenv init - zsh)"
 
 source $ZSH/oh-my-zsh.sh
 source ~/.git-flow-completion.zsh
-PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH" # Add Postgres.app to PATH
+PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH" # Add Postgres.app to PATH
 ### Added by the Heroku Toolbelt
 export PATH="$PATH:/usr/local/heroku/bin"
