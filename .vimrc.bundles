@@ -7,7 +7,7 @@ call vundle#begin()
 Plugin 'gmarik/vundle'
 
 " Define bundles via Github repos
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'pbrisbin/vim-mkdir'
 Plugin 'scrooloose/syntastic'
