@@ -175,3 +175,4 @@ vmap <Leader>b :<C-U>!git blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'
 
 " Detect fastlane config as ruby
 au BufNewFile,BufRead *Fastfile set filetype=ruby
+au BufNewFile,BufRead *Appfile set filetype=ruby
