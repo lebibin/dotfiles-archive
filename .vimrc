@@ -3,6 +3,8 @@
 set nocompatible
 filetype off
 
+set encoding=utf8
+
 set autowrite
 set autoread
 set history=50
