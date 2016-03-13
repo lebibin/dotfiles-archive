@@ -109,13 +109,6 @@ autocmd BufNewFile,BufRead *.xlsx.axlsx set syntax=ruby
 " Add mapping for tagbar
 nmap <F8> :TagbarToggle<CR>
 
-" Set source code pro as default font
-if has('gui_running')
-  set guioptions=emgt     " Hide toolbar and scrollbars
-  set lines=999 columns=999
-  set guifont=Source\ Code\ Pro\ for\ Powerline\ 9
-endif
-
 set lazyredraw
 
 " http://ideasintosoftware.com/vim-productivity-tips/
@@ -124,6 +117,59 @@ set relativenumber
 " http://ideasintosoftware.com/history-is-a-tree/
 set undofile
 set undodir=~/.vim/undodir
+
+" For startify - htps://github.com/mhinz/vim-startify
+set viminfo='100,n$HOME/.vim/files/info/viminfo'
+let g:startify_list_order = [
+      \ ['   MRU'],           'files' ,
+      \ ['   MRU '.getcwd()], 'dir',
+      \ ]
+
+let g:startify_skiplist = [
+      \ 'COMMIT_EDITMSG',
+      \ 'bundle/.*/doc',
+      \ ]
+
+let g:startify_change_to_dir          = 0
+let g:startify_enable_special         = 0
+let g:startify_files_number           = 8
+let g:startify_session_autoload       = 1
+let g:startify_session_delete_buffers = 1
+let g:startify_session_persistence    = 1
+let g:startify_update_oldfiles        = 1
+let g:startify_use_env                = 1
+
+let g:startify_custom_header = [
+  \"                                        ",
+  \"                                         ",
+  \"                                          ",
+  \"                           ▄              ▄",
+  \"                          ▌▒█           ▄▀▒▌",
+  \"                          ▌▒▒▀▄       ▄▀▒▒▒▐",
+  \"                         ▐▄▀▒▒▀▀▀▀▄▄▄▀▒▒▒▒▒▐",
+  \"                       ▄▄▀▒▒▒▒▒▒▒▒▒▒▒█▒▒▄█▒▐",
+  \"                     ▄▀▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▀██▀▒▌",
+  \"                    ▐▒▒▒▄▄▄▒▒▒▒▒▒▒▒▒▒▒▒▒▀▄▒▒▌",
+  \"                    ▌▒▒▐▄█▀▒▒▒▒▄▀█▄▒▒▒▒▒▒▒█▒▐",
+  \"                   ▐▒▒▒▒▒▒▒▒▒▒▒▌██▀▒▒▒▒▒▒▒▒▀▄▌",
+  \"                   ▌▒▀▄██▄▒▒▒▒▒▒▒▒▒▒▒░░░░▒▒▒▒▌",
+  \"                   ▌▀▐▄█▄█▌▄▒▀▒▒▒▒▒▒░░░░░░▒▒▒▐",
+  \"                  ▐▒▀▐▀▐▀▒▒▄▄▒▄▒▒▒▒▒░░░░░░▒▒▒▒▌",
+  \"                  ▐▒▒▒▀▀▄▄▒▒▒▄▒▒▒▒▒▒░░░░░░▒▒▒▐",
+  \"                   ▌▒▒▒▒▒▒▀▀▀▒▒▒▒▒▒▒▒░░░░▒▒▒▒▌",
+  \"                   ▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▐",
+  \"                    ▀▄▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▄▒▒▒▒▌",
+  \"                      ▀▄▒▒▒▒▒▒▒▒▒▒▄▄▄▀▒▒▒▒▄▀",
+  \"                     ▐▀▒▀▄▄▄▄▄▄▀▀▀▒▒▒▒▒▄▄▀",
+  \"                    ▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▀▀",
+  \"                  MUCH VIM,▒▒▒▒▒▒▒▒▄▀",
+  \"                SUCH PATIENCE▒▒▒▒▒▀",
+  \"                        WOW ▒▒▒▒▒▀",
+  \"                                ",
+  \"                               ",
+  \"                              ",
+  \"                             ",
+  \]
 
 vmap <Leader>b :<C-U>!git blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p <CR>
 
