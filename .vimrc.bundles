@@ -41,9 +41,8 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ryanoasis/vim-devicons'
 " Plugin 'Valloric/YouCompleteMe'
 " Define color schemes
-Plugin 'sjl/badwolf'
 Plugin 'w0ng/vim-hybrid'
-Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
+Plugin 'KabbAmine/yowish.vim'
 " Wakawakawakatime
 Bundle 'wakatime/vim-wakatime'
 
