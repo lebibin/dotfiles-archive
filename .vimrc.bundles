@@ -7,8 +7,8 @@ call vundle#begin()
 Plugin 'gmarik/vundle'
 
 " Define bundles via Github repos
+Plugin 'tpope/vim-sensible'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'kchmck/vim-coffee-script'
 Plugin 'pbrisbin/vim-mkdir'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-bundler'
@@ -18,31 +18,22 @@ Plugin 'tpope/vim-surround'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'othree/html5.vim'
 Plugin 'bling/vim-airline'
-Plugin 'groenewege/vim-less'
-Plugin 'slim-template/vim-slim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'mattn/emmet-vim'
 Plugin 'vim-scripts/nginx.vim'
-Plugin 'chrisbra/csv.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'lilydjwg/colorizer'
 Plugin 'gregsexton/MatchTag'
 Plugin 'vim-scripts/matchit.zip'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'claco/jasmine.vim'
 Plugin 'burnettk/vim-angular'
-Plugin 'tpope/vim-haml'
-Plugin 'hail2u/vim-css3-syntax'
-Plugin 'pangloss/vim-javascript'
-Plugin 'jelera/vim-javascript-syntax'
 Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'fatih/vim-go'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ryanoasis/vim-devicons'
-" Plugin 'Valloric/YouCompleteMe'
+
 " Define color schemes
-Plugin 'w0ng/vim-hybrid'
 Plugin 'KabbAmine/yowish.vim'
+
 " Wakawakawakatime
 Bundle 'wakatime/vim-wakatime'
 
