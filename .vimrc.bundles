@@ -38,6 +38,7 @@ Plugin 'jelera/vim-javascript-syntax'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'fatih/vim-go'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'ryanoasis/vim-devicons'
 " Plugin 'Valloric/YouCompleteMe'
 " Define color schemes
 Plugin 'sjl/badwolf'
