@@ -31,6 +31,7 @@ Plugin 'mhinz/vim-startify'
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ryanoasis/vim-devicons'
+Plugin 'tpope/vim-commentary'
 
 " Define color schemes
 Plugin 'KabbAmine/yowish.vim'
