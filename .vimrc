@@ -24,6 +24,9 @@ set shiftwidth=2
 set shiftround
 set smartindent
 
+" Use system clipboard
+set clipboard=unnamed
+
 " Fileformat
 set fileformat=unix
 set fileformats=unix,dos
