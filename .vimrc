@@ -16,6 +16,11 @@ set noswapfile
 set ruler         " Show the cursor position all the time
 set showcmd       " Display incomplete commands
 
+" Let's enable folding!
+set foldenable
+set foldmethod=syntax
+set foldlevel=1
+
 " Softabs, 2 spaces for Ruby <3
 set backspace=2   " Backspace deletes like most programs in insert mode
 set expandtab
