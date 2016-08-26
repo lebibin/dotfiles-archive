@@ -12,6 +12,7 @@ alias pull='git pull --rebase origin master'
 alias pulld='git pull --rebase origin development'
 alias fs='foreman start'
 alias pi='pod install --verbose --no-repo-update'
+alias dr='bundle exec cap staging mb:sidekiq:stop mb:unicorn:stop mb:unicorn:start mb:sidekiq:start'
 
 # Thanks reddit! (͡° ͜ʖ ͡°)
 # https://www.reddit.com/r/vim/comments/42fwjx/when_vim_leaves_a_trail/cza0azv
