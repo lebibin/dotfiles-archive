@@ -30,7 +30,9 @@ set shiftround
 set smartindent
 
 " Use system clipboard
-set clipboard=unnamed
+if $TMUX == ''
+  set clipboard+=unnamed
+endif
 
 " Fileformat
 set fileformat=unix
