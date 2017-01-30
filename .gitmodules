@@ -3,10 +3,10 @@
 	url = git@github.com:lebibin/.tmux.git
 [submodule "zsh"]
 	path = zsh
-	url = https://github.com/dracula/zsh.git
+	url = git@github.com/dracula/zsh.git
 [submodule "xcode"]
 	path = xcode
-	url = https://github.com/dracula/xcode.git
+	url = git@github.com/dracula/xcode.git
 [submodule "iterm"]
 	path = iterm
-	url = https://github.com/dracula/iterm.git
+	url = git@github.com/dracula/iterm.git
