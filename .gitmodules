@@ -7,3 +7,6 @@
 [submodule "xcode"]
 	path = xcode
 	url = https://github.com/dracula/xcode.git
+[submodule "iterm"]
+	path = iterm
+	url = https://github.com/dracula/iterm.git
