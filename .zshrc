@@ -8,8 +8,7 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(bundler capistrano catimg colorize command-not-found gem git osx ssh-agent virtualenv zsh-syntax-highlighting)
 
 # Here be the aliases
-alias pull='git pull --rebase origin master'
-alias pulld='git pull --rebase origin development'
+alias pull="git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)"
 alias fs='foreman start'
 alias pi='pod install --verbose --no-repo-update'
 alias csr='bundle exec cap staging mb:sidekiq:stop mb:unicorn:stop mb:unicorn:start mb:sidekiq:start'
