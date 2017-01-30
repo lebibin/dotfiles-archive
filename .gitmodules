@@ -4,3 +4,6 @@
 [submodule "zsh"]
 	path = zsh
 	url = https://github.com/dracula/zsh.git
+[submodule "xcode"]
+	path = xcode
+	url = https://github.com/dracula/xcode.git
