@@ -35,7 +35,8 @@ Plugin 'tpope/vim-commentary'
 Plugin 'suan/vim-instant-markdown'
 
 " Define color schemes
-Plugin 'KabbAmine/yowish.vim'
+Plugin 'dracula/vim'
+
 
 " Wakawakawakatime
 Bundle 'wakatime/vim-wakatime'
