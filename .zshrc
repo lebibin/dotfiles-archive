@@ -40,12 +40,8 @@ export PATH="$PATH:/usr/local/heroku/bin"
 # added by travis gem
 [ -f /Users/$USER/.travis/travis.sh ] && source /Users/$USER/.travis/travis.sh
 
-# Custom functions
-function pull () {
-  git pull --rebase origin $(current_branch)
-}
-
 # Here be the aliases
+alias pull='ggpur'
 alias fs='foreman start'
 alias pi='pod install --verbose --no-repo-update'
 alias csr='bundle exec cap staging mb:sidekiq:stop mb:unicorn:stop mb:unicorn:start mb:sidekiq:start'
