@@ -41,6 +41,7 @@ export PATH="$PATH:/usr/local/heroku/bin"
 [ -f /Users/$USER/.travis/travis.sh ] && source /Users/$USER/.travis/travis.sh
 
 # Here be the aliases
+alias c='clear'
 alias pull='ggpur'
 alias fs='foreman start'
 alias pi='pod install --verbose --no-repo-update'
