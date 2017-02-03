@@ -15,6 +15,7 @@ export LC_ALL=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
+
 # https://webdevstudios.com/2015/02/10/a-beginners-guide-to-the-best-command-line-tools/
 export HISTSIZE=32768;
 export HISTFILESIZE=$HISTSIZE;
@@ -26,14 +27,13 @@ export GOPATH=$HOME/Code/go
 export PATH="$GOPATH/bin:$PATH"
 
 # Use rbenv instead
-# if [[ -s $HOME/.rvm/scripts/rvm ]] ; then source $HOME/.rvm/scripts/rvm ; fi
-# PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - zsh)"
 
 source $ZSH/oh-my-zsh.sh
 source ~/.git-flow-completion.zsh
 PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH" # Add Postgres.app to PATH
+
 ### Added by the Heroku Toolbelt
 export PATH="$PATH:/usr/local/heroku/bin"
 
@@ -57,4 +57,3 @@ alias :wq!=:wq
 alias :q=:wq
 alias :qa=:wq
 alias :q!=:wq
-
