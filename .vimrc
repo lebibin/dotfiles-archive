@@ -1,3 +1,41 @@
+" So long vundle, we shall now use plug since yarn
+" showed me the power of parallel package installation
+call plug#begin('~/.vim/bundle')
+
+Plug 'airblade/vim-gitgutter'
+Plug 'bling/vim-airline'
+Plug 'gregsexton/MatchTag'
+Plug 'lebibin/dracula-vim'
+Plug 'lilydjwg/colorizer'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'mattn/emmet-vim'
+Plug 'majutsushi/tagbar'
+Plug 'mhinz/vim-startify'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'othree/html5.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'pbrisbin/vim-mkdir'
+Plug 'ryanoasis/vim-devicons'
+Plug 'scrooloose/syntastic'
+Plug 'suan/vim-instant-markdown'
+Plug 'tpope/vim-bundler'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-rails'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-ruby/vim-ruby'
+Plug 'vim-scripts/matchit.zip'
+Plug 'vim-scripts/nginx.vim'
+Plug 'vim-scripts/AutoClose'
+Plug 'wakatime/vim-wakatime'
+
+" Initialize plugin system
+call plug#end()
+
 " Use Vim settings, rather than Vi settings. This setting must be as early as
 " possible, as it has side effects.
 set nocompatible
@@ -64,10 +102,6 @@ set spell
 function! SyntaxItem()
   return synIDattr(synID(line("."),col("."),1),"name")
 endfunction
-
-if filereadable(expand("~/.vimrc.bundles"))
-  source ~/.vimrc.bundles
-endif
 
 filetype plugin indent on
 syntax on
@@ -185,3 +219,8 @@ vmap <Leader>b :<C-U>!git blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'
 " Detect fastlane config as ruby
 au BufNewFile,BufRead *Fastfile set filetype=ruby
 au BufNewFile,BufRead *Appfile set filetype=ruby
+
+" http://www.devinrm.com/2016/02/16/ditching-ctrl-p/
+" Fuzzy-find with fzf
+map <C-p> :Files<cr>
+nmap <C-p> :Files<cr>

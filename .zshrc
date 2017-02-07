@@ -60,3 +60,5 @@ alias :wq!=:wq
 alias :q=:wq
 alias :qa=:wq
 alias :q!=:wq
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
