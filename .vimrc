@@ -134,8 +134,6 @@ autocmd VimEnter * call AirlineInit()
 let g:airline#extensions#tabline#enabled=1
 let g:airline_powerline_fonts=1
 
-" Set .axlsx to ruby
-autocmd BufNewFile,BufRead *.xlsx.axlsx set syntax=ruby
 
 " Add mapping for tagbar
 nmap <F8> :TagbarToggle<CR>
@@ -203,7 +201,8 @@ let g:startify_custom_header = [
 
 vmap <Leader>b :<C-U>!git blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p <CR>
 
-" Detect fastlane config as ruby
+" Detect weird files' language
+au BufNewFile,BufRead *.xlsx.axlsx set filetype=ruby
 au BufNewFile,BufRead *Fastfile set filetype=ruby
 au BufNewFile,BufRead *Appfile set filetype=ruby
 
