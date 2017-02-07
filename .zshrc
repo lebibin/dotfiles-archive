@@ -26,6 +26,9 @@ export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help";
 export GOPATH=$HOME/Code/go
 export PATH="$GOPATH/bin:$PATH"
 
+# Yarn for react-native
+export PATH="$PATH:`yarn global bin`"
+
 # Use rbenv instead
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - zsh)"
