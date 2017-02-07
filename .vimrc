@@ -109,10 +109,10 @@ syntax on
 " UI Settings
 set wildmenu
 set t_Co=256
-let g:airline_theme = 'dracula'
 set background=dark
-let g:yowish = {'term_italic': 0}
 colorscheme dracula
+let g:dracula_italic = 1
+let g:airline_theme = 'dracula'
 
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
 if executable('ag')
