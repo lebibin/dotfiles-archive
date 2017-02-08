@@ -12,12 +12,12 @@ Plug 'junegunn/fzf.vim'
 Plug 'mattn/emmet-vim'
 Plug 'majutsushi/tagbar'
 Plug 'mhinz/vim-startify'
+Plug 'mxw/vim-jsx'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'othree/html5.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'pbrisbin/vim-mkdir'
 Plug 'ryanoasis/vim-devicons'
-Plug 'scrooloose/syntastic'
 Plug 'suan/vim-instant-markdown'
 Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-commentary'
@@ -31,6 +31,7 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/matchit.zip'
 Plug 'vim-scripts/nginx.vim'
 Plug 'vim-scripts/AutoClose'
+Plug 'vim-syntastic/syntastic'
 Plug 'wakatime/vim-wakatime'
 
 " Initialize plugin system
@@ -120,10 +121,15 @@ nnoremap <silent> <Right> :bnext<CR>
 nnoremap <Up> :echo "Use k"<CR>
 nnoremap <Down> :echo "Use j"<CR>
 
-let g:syntastic_check_on_open=1
-let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
-let g:syntastic_javascript_checkers = ['standard']
-autocmd bufwritepost *.js silent !standard % --format
+" https://jaxbot.me/articles/setting-up-vim-for-react-js-jsx-02-03-2015
+let g:jsx_ext_required = 0 " Allow JSX in normal JS files
+
+" Syntastic configuration
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_checkers = ['eslint']
 
 " Override certain sections of airline
 call airline#parts#define_function('syntaxitem','SyntaxItem')
@@ -216,15 +222,15 @@ let g:fzf_layout = { 'down': '~19%' }
 
 " Customize fzf colors to match your color scheme
 let g:fzf_colors =
-\ { 'fg':      ['fg', 'Normal'],
-  \ 'bg':      ['bg', 'Normal'],
-  \ 'hl':      ['fg', 'Comment'],
-  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
-  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
-  \ 'hl+':     ['fg', 'Statement'],
-  \ 'info':    ['fg', 'PreProc'],
-  \ 'prompt':  ['fg', 'Conditional'],
-  \ 'pointer': ['fg', 'Exception'],
-  \ 'marker':  ['fg', 'Keyword'],
-  \ 'spinner': ['fg', 'Label'],
-  \ 'header':  ['fg', 'Comment'] }
+      \ { 'fg':      ['fg', 'Normal'],
+      \ 'bg':      ['bg', 'Normal'],
+      \ 'hl':      ['fg', 'Comment'],
+      \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+      \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+      \ 'hl+':     ['fg', 'Statement'],
+      \ 'info':    ['fg', 'PreProc'],
+      \ 'prompt':  ['fg', 'Conditional'],
+      \ 'pointer': ['fg', 'Exception'],
+      \ 'marker':  ['fg', 'Keyword'],
+      \ 'spinner': ['fg', 'Label'],
+      \ 'header':  ['fg', 'Comment'] }
