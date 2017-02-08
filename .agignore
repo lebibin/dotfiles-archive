@@ -1,7 +1,13 @@
- tmp
- log
- chef
- coverage
- perf
- spec/vcr
- vendor/
+tmp
+log
+chef
+coverage
+perf
+spec/vcr
+vendor/
+*.ico
+*.gif
+*.jpg
+*.jpeg
+*.png
+*.ttf
