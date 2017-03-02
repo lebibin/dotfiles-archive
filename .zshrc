@@ -45,13 +45,14 @@ export PATH="$PATH:/usr/local/heroku/bin"
 
 # Here be the aliases
 alias c='clear'
-alias pull='ggpur'
-alias fs='foreman start'
-alias pi='pod install --verbose --no-repo-update'
-alias csr='bundle exec cap staging mb:sidekiq:stop mb:unicorn:stop mb:unicorn:start mb:sidekiq:start'
 alias cpr='bundle exec cap production mb:sidekiq:stop mb:unicorn:stop mb:unicorn:start mb:sidekiq:start'
+alias csr='bundle exec cap staging mb:sidekiq:stop mb:unicorn:stop mb:unicorn:start mb:sidekiq:start'
+alias fs='foreman start'
 alias hrkoff='heroku ps:scale web=0'
 alias hrkon='heroku ps:scale web=1'
+alias pp='pull && git push'
+alias pi='pod install --verbose --no-repo-update'
+alias pull='ggpur'
 
 # Thanks reddit! (͡° ͜ʖ ͡°)
 # https://www.reddit.com/r/vim/comments/42fwjx/when_vim_leaves_a_trail/cza0azv
