@@ -234,3 +234,13 @@ let g:fzf_colors =
       \ 'marker':  ['fg', 'Keyword'],
       \ 'spinner': ['fg', 'Label'],
       \ 'header':  ['fg', 'Comment'] }
+
+" http://stackoverflow.com/a/2559262
+set scrolloff=3         " 2 lines above/below cursor when scrolling
+set showmatch           " show matching bracket (briefly jump)
+set showmode            " show mode in status bar (insert/replace/...)
+set title               " show file in titlebar
+set matchtime=3         " show matching bracket for 0.3 seconds
+set matchpairs+=<:>     " specially for html
+set hidden              " remember undo after quitting
+set confirm             " get a dialog when :q, :w, or :wq fails
