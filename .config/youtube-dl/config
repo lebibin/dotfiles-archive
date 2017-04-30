@@ -1,0 +1,11 @@
+# Set default output name
+-o '%(title)s.%(ext)s'
+
+# Save the best quality with max height of 720p
+-f 'best[height=720]'
+
+# Limit download speed to 512KB/s
+-r 512K
+
+# Verbose output
+-v
