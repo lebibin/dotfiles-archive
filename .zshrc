@@ -27,7 +27,7 @@ export GOPATH=$HOME/Code/go
 export PATH="$GOPATH/bin:$PATH"
 
 # Yarn for react-native
-export PATH="$PATH:`yarn global bin`"
+export PATH="$PATH:$HOME/.config/yarn/global/node_modules/.bin"
 
 # Use rbenv instead
 export PATH="$HOME/.rbenv/bin:$PATH"
