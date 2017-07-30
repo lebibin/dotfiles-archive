@@ -247,7 +247,7 @@ let g:fzf_layout = { 'down': '~19%' }
 
 " Customize fzf colors to match your color scheme
 let g:fzf_colors =
-      \ { 'fg':      ['fg', 'Normal'],
+      \ { 'fg':    ['fg', 'Normal'],
       \ 'bg':      ['bg', 'Normal'],
       \ 'hl':      ['fg', 'Comment'],
       \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
@@ -269,3 +269,7 @@ set matchtime=3         " show matching bracket for 0.3 seconds
 set matchpairs+=<:>     " specially for html
 set hidden              " remember undo after quitting
 set confirm             " get a dialog when :q, :w, or :wq fails
+
+" vim-easy-align mappings
+nmap ga <Plug>(EasyAlign)
+xmap ga <Plug>(EasyAlign)
