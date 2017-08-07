@@ -98,8 +98,11 @@ set textwidth=80
 set colorcolumn=+1
 
 " Numbers
+" http://ideasintosoftware.com/vim-productivity-tips/
 set number
 set numberwidth=5
+set relativenumber
+nnoremap <C-n> :set nu!<CR>:set rnu!<CR>
 
 " Splits and windows
 set splitbelow
@@ -170,9 +173,6 @@ let g:airline_powerline_fonts=1
 nmap <F8> :TagbarToggle<CR>
 
 set lazyredraw
-
-" http://ideasintosoftware.com/vim-productivity-tips/
-set relativenumber
 
 " http://ideasintosoftware.com/history-is-a-tree/
 set undofile
