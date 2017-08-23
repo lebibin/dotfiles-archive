@@ -157,6 +157,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_ruby_checkers = ['mri', 'reek', 'rubocop']
+let g:syntastic_scss_checkers = ['scss_lint']
 
 " Override certain sections of airline
 call airline#parts#define_function('syntaxitem','SyntaxItem')
