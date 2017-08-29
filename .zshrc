@@ -47,7 +47,7 @@ export PATH="$PATH:/usr/local/heroku/bin"
 alias c='clear'
 alias cpr='bundle exec cap production mb:sidekiq:stop mb:unicorn:stop mb:unicorn:start mb:sidekiq:start'
 alias csr='bundle exec cap staging mb:sidekiq:stop mb:unicorn:stop mb:unicorn:start mb:sidekiq:start'
-alias fs='foreman start'
+alias fs='bundle exec foreman start'
 alias hrkoff='heroku ps:scale web=0'
 alias hrkon='heroku ps:scale web=1'
 alias pp='pull && git push'
