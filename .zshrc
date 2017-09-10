@@ -53,6 +53,8 @@ alias hrkon='heroku ps:scale web=1'
 alias pp='pull && git push'
 alias pi='pod install --verbose --no-repo-update'
 alias pull='ggpur'
+alias rdm='bin/rails db:migrate && bin/rails db:migrate RAILS_ENV=test'
+alias rdr='bin/rails db:rollback && bin/rails db:rollback RAILS_ENV=test'
 
 # Thanks reddit! (͡° ͜ʖ ͡°)
 # https://www.reddit.com/r/vim/comments/42fwjx/when_vim_leaves_a_trail/cza0azv
