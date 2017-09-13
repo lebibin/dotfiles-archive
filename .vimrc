@@ -237,6 +237,7 @@ vmap <Leader>b :<C-U>!git blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'
 au BufNewFile,BufRead *.xlsx.axlsx set filetype=ruby
 au BufNewFile,BufRead *Fastfile set filetype=ruby
 au BufNewFile,BufRead *Appfile set filetype=ruby
+au BufNewFile,BufRead *BUCK set filetype=python
 
 " http://www.devinrm.com/2016/02/16/ditching-ctrl-p/
 " Fuzzy-find with fzf
