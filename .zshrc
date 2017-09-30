@@ -5,7 +5,8 @@ DISABLE_AUTO_UPDATE="true"
 DISABLE_LS_COLORS="true"
 DISABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
-plugins=(bundler capistrano catimg colorize command-not-found gem git osx ssh-agent zsh-syntax-highlighting)
+plugins=(bundler capistrano catimg colorize command-not-found gem git osx ssh-agent zsh-completions zsh-syntax-highlighting)
+autoload -U compinit && compinit
 
 export PATH="/usr/local/bin:$PATH"
 export EDITOR='vim'
