@@ -40,8 +40,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/matchit.zip'
 Plug 'vim-scripts/nginx.vim'
-Plug 'vim-syntastic/syntastic'
 Plug 'wakatime/vim-wakatime'
+Plug 'w0rp/ale'
 
 " Initialize plugin system
 call plug#end()
@@ -152,13 +152,13 @@ set conceallevel=1
 " https://jaxbot.me/articles/setting-up-vim-for-react-js-jsx-02-03-2015
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 
-" Syntastic configuration
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_ruby_checkers = ['mri', 'reek', 'rubocop']
-let g:syntastic_scss_checkers = ['scss_lint']
+" Set this. Airline will handle the rest.
+let g:airline#extensions#ale#enabled = 1
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+let g:ale_sign_error = '!!'
+let g:ale_sign_warning = '??'
 
 " Override certain sections of airline
 call airline#parts#define_function('syntaxitem','SyntaxItem')
