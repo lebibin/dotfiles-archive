@@ -11,10 +11,10 @@ endif
 call plug#begin('~/.vim/bundle')
 
 Plug 'airblade/vim-gitgutter'
+Plug 'ap/vim-css-color'
 Plug 'bling/vim-airline'
 Plug 'gregsexton/MatchTag'
 Plug 'lebibin/dracula-vim'
-Plug 'lilydjwg/colorizer'
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
