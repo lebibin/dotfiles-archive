@@ -191,19 +191,9 @@ let g:startify_list_order = [
       \ ['   MRU '.getcwd()], 'dir',
       \ ]
 
-let g:startify_skiplist = [
-      \ 'COMMIT_EDITMSG',
-      \ 'bundle/.*/doc',
-      \ ]
-
 let g:startify_change_to_dir          = 0
-let g:startify_enable_special         = 0
-let g:startify_files_number           = 8
-let g:startify_session_autoload       = 1
+let g:startify_files_number           = 3
 let g:startify_session_delete_buffers = 1
-let g:startify_session_persistence    = 1
-let g:startify_update_oldfiles        = 1
-let g:startify_use_env                = 1
 
 let g:startify_custom_header = [
       \"░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░",
