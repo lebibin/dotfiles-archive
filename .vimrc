@@ -22,7 +22,6 @@ Plug 'mattn/emmet-vim'
 Plug 'majutsushi/tagbar'
 Plug 'mhinz/vim-startify'
 Plug 'mxw/vim-jsx'
-Plug 'nathanaelkane/vim-indent-guides'
 Plug 'othree/html5.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'pbrisbin/vim-mkdir'
@@ -42,7 +41,6 @@ Plug 'vim-scripts/matchit.zip'
 Plug 'vim-scripts/nginx.vim'
 Plug 'wakatime/vim-wakatime'
 Plug 'w0rp/ale'
-Plug 'Yggdroot/indentLine'
 
 " Initialize plugin system
 call plug#end()
