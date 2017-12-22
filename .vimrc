@@ -40,7 +40,7 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/matchit.zip'
 Plug 'vim-scripts/nginx.vim'
 Plug 'wakatime/vim-wakatime'
-Plug 'w0rp/ale'
+" Plug 'w0rp/ale'
 
 " Initialize plugin system
 call plug#end()
@@ -62,6 +62,11 @@ set nowritebackup
 set noswapfile
 set ruler         " Show the cursor position all the time
 set showcmd       " Display incomplete commands
+
+" https://kinbiko.com/vim/my-shiniest-vim-gems/
+" show thy column
+set cursorcolumn
+set cursorline
 
 " Let's enable folding!
 set foldenable
