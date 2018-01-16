@@ -40,7 +40,7 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/matchit.zip'
 Plug 'vim-scripts/nginx.vim'
 Plug 'wakatime/vim-wakatime'
-" Plug 'w0rp/ale'
+Plug 'w0rp/ale'
 
 " Initialize plugin system
 call plug#end()
