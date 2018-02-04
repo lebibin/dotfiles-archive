@@ -188,7 +188,9 @@ set undofile
 set undodir=~/.vim/undodir
 
 " For startify - htps://github.com/mhinz/vim-startify
-set viminfo='100,n$HOME/.vim/files/info/viminfo'
+if !has('nvim')
+  set viminfo='100,n$HOME/.vim/files/info/viminfo'
+endif
 let g:startify_list_order = [
       \ ['   MRU'],           'files' ,
       \ ['   MRU '.getcwd()], 'dir',
