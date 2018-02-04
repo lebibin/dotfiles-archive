@@ -68,8 +68,12 @@ alias :q!=:wq
 # Goodbye, VIM
 # https://robots.thoughtbot.com/my-life-with-neovim
 if type nvim > /dev/null 2>&1; then
-  alias vim="nvim"
-  export EDITOR='nvim'
+  # https://stackoverflow.com/a/2596835
+  export VISUAL="nvim"
+  export EDITOR="$VISUAL"
+
+  alias vim="$VISUAL"
+
   # https://gist.github.com/blainesch/9844f5ebf9628e5396b2f137ea3b0022
   ln -sf ~/.vim ~/.config/nvim
   ln -sf ~/.vimrc ~/.vim/init.vim
