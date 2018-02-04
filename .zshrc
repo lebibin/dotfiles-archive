@@ -59,11 +59,18 @@ alias rdr='bin/rails db:rollback && bin/rails db:rollback RAILS_ENV=test'
 
 # Thanks reddit! (͡° ͜ʖ ͡°)
 # https://www.reddit.com/r/vim/comments/42fwjx/when_vim_leaves_a_trail/cza0azv
-alias :wq="echo \"This isn't vim, asshole!\""
+alias :wq="echo \"This isn't nvim!\""
 alias :wq!=:wq
 alias :q=:wq
 alias :qa=:wq
 alias :q!=:wq
+
+# Goodbye, VIM
+# https://robots.thoughtbot.com/my-life-with-neovim
+if type nvim > /dev/null 2>&1; then
+  alias vim="nvim"
+  export EDITOR='nvim'
+fi
 
 # https://medium.com/@crashybang/supercharge-vim-with-fzf-and-ripgrep-d4661fc853d2
 # Setting ag as the default source for fzf
