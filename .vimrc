@@ -21,6 +21,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'mattn/emmet-vim'
 Plug 'majutsushi/tagbar'
 Plug 'mhinz/vim-startify'
+Plug 'milch/vim-fastlane'
 Plug 'mxw/vim-jsx'
 Plug 'othree/html5.vim'
 Plug 'pangloss/vim-javascript'
@@ -238,8 +239,6 @@ vmap <Leader>b :<C-U>!git blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'
 
 " Detect weird files' language
 au BufNewFile,BufRead *.xlsx.axlsx set filetype=ruby
-au BufNewFile,BufRead *Fastfile set filetype=ruby
-au BufNewFile,BufRead *Appfile set filetype=ruby
 au BufNewFile,BufRead *BUCK set filetype=python
 
 " http://www.devinrm.com/2016/02/16/ditching-ctrl-p/
