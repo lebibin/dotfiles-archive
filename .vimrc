@@ -115,6 +115,9 @@ set splitright
 " Enable spell check
 set spell
 
+" Nvim shows weird symbols (�[2 q) when changing modes
+set guicursor=
+
 " Showing syntax highlight group in statusline
 function! SyntaxItem()
   return synIDattr(synID(line("."),col("."),1),"name")
