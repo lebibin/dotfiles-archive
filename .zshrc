@@ -51,6 +51,7 @@ alias csr='bundle exec cap staging mb:sidekiq:stop mb:unicorn:stop mb:unicorn:st
 alias fs='bundle exec foreman start'
 alias hrkoff='heroku ps:scale web=0'
 alias hrkon='heroku ps:scale web=1'
+alias ls='colorls -lA --sd'
 alias pp='pull && git push'
 alias pi='pod install --verbose --no-repo-update'
 alias pull='ggpur'
