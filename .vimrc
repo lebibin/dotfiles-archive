@@ -14,12 +14,12 @@ Plug 'airblade/vim-gitgutter'
 Plug 'ap/vim-css-color'
 Plug 'bling/vim-airline'
 Plug 'gregsexton/MatchTag'
-Plug 'lebibin/dracula-vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'mattn/emmet-vim'
 Plug 'majutsushi/tagbar'
+Plug 'mhartington/oceanic-next'
 Plug 'mhinz/vim-startify'
 Plug 'milch/vim-fastlane'
 Plug 'mxw/vim-jsx'
@@ -131,9 +131,14 @@ syntax on
 set wildmenu
 set t_Co=256
 set background=dark
-colorscheme dracula
-let g:dracula_italic = 1
-let g:airline_theme = 'dracula'
+if (has("termguicolors"))
+ set termguicolors
+endif
+syntax enable
+let g:oceanic_next_terminal_bold = 1
+let g:oceanic_next_terminal_italic = 1
+colorscheme OceanicNext
+let g:airline_theme = 'oceanicnext'
 
 " May the force be with you
 nnoremap <silent> <Left> :bprev<CR>
