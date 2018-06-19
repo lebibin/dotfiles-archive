@@ -1,11 +1,7 @@
-# Set default output name
 -o '%(title)s.%(ext)s'
-
-# Download best mp4 format available or any other best if no mp4 available
 -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best'
-
-# Limit download speed to 512KB/s
 -r 1024K
-
-# Verbose output
 -v
+--write-sub
+--sub-lang en_US
+--convert-subs srt
