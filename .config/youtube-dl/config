@@ -2,6 +2,5 @@
 -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best'
 -r 1024K
 -v
---write-sub
---sub-lang en_US
---convert-subs srt
+--all-subs
+--embed-subs
