@@ -78,13 +78,11 @@ set foldenable
 set foldmethod=syntax
 set foldlevel=1
 
-" Softabs, 2 spaces for Ruby <3
-set backspace=2   " Backspace deletes like most programs in insert mode
-set expandtab
+" https://stackoverflow.com/a/1878984
 set tabstop=2
 set shiftwidth=2
-set shiftround
-set smartindent
+set softtabstop=2
+set expandtab
 
 " Use system clipboard
 if $TMUX == ''
