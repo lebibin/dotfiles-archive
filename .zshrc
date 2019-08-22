@@ -75,9 +75,7 @@ if type nvim > /dev/null 2>&1; then
 
   alias vim="$VISUAL"
 
-  # https://gist.github.com/blainesch/9844f5ebf9628e5396b2f137ea3b0022
-  ln -sf ~/.vim ~/.config/nvim
-  ln -sf ~/.vimrc ~/.vim/init.vim
+  ln -sf ~/.vimrc ~/.config/nvim/init.vim
 fi
 
 # https://medium.com/@crashybang/supercharge-vim-with-fzf-and-ripgrep-d4661fc853d2
