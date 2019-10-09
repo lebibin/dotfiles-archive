@@ -164,8 +164,6 @@ let g:javascript_conceal_prototype            = "¶"
 let g:javascript_conceal_static               = "•"
 let g:javascript_conceal_super                = "Ω"
 let g:javascript_conceal_arrow_function       = "⇒"
-let g:javascript_conceal_noarg_arrow_function = "🞅"
-let g:javascript_conceal_underscore_arrow_function = "🞅"
 set conceallevel=1
 
 " https://jaxbot.me/articles/setting-up-vim-for-react-js-jsx-02-03-2015
