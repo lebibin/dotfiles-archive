@@ -24,7 +24,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'mattn/emmet-vim'
 Plug 'majutsushi/tagbar'
-Plug 'mhartington/oceanic-next'
+Plug 'junegunn/seoul256.vim'
 Plug 'mhinz/vim-startify'
 Plug 'milch/vim-fastlane'
 Plug 'mxw/vim-jsx'
@@ -144,8 +144,9 @@ endif
 syntax enable
 let g:oceanic_next_terminal_bold = 1
 let g:oceanic_next_terminal_italic = 1
-colorscheme OceanicNext
-let g:airline_theme = 'oceanicnext'
+colorscheme seoul256
+let g:seoul256_background = 233
+let g:airline_theme='zenburn'
 
 " May the force be with you
 nnoremap <silent> <Left> :bprev<CR>
