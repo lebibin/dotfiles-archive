@@ -24,6 +24,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'mattn/emmet-vim'
 Plug 'majutsushi/tagbar'
+Plug 'janko/vim-test'
 Plug 'junegunn/seoul256.vim'
 Plug 'mhinz/vim-startify'
 Plug 'milch/vim-fastlane'
@@ -316,7 +317,7 @@ autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.html.javascript.css
 
 " https://github.com/prettier/vim-prettier
 let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+" autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
 
 " Configure UltiSnips
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
@@ -329,3 +330,10 @@ let g:UltiSnipsEditSplit="vertical"
 " Hardtime challenge accepted
 let g:hardtime_default_on = 1
 let g:hardtime_showmsg = 1
+
+" these "Ctrl mappings" work well when Caps Lock is mapped to Ctrl
+nmap <silent> t<C-n> :TestNearest<CR>
+nmap <silent> t<C-f> :TestFile<CR>
+nmap <silent> t<C-s> :TestSuite<CR>
+nmap <silent> t<C-l> :TestLast<CR>
+nmap <silent> t<C-g> :TestVisit<CR>
