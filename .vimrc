@@ -14,6 +14,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'ap/vim-css-color'
 Plug 'bling/vim-airline'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'dracula/vim'
 Plug 'gavocanov/vim-js-indent'
 Plug 'gregsexton/MatchTag'
 Plug 'honza/vim-snippets'
@@ -25,7 +26,6 @@ Plug 'leafgarland/typescript-vim'
 Plug 'mattn/emmet-vim'
 Plug 'majutsushi/tagbar'
 Plug 'janko/vim-test'
-Plug 'junegunn/seoul256.vim'
 Plug 'mhinz/vim-startify'
 Plug 'milch/vim-fastlane'
 Plug 'mxw/vim-jsx'
@@ -145,9 +145,8 @@ endif
 syntax enable
 let g:oceanic_next_terminal_bold = 1
 let g:oceanic_next_terminal_italic = 1
-colorscheme seoul256
-let g:seoul256_background = 233
-let g:airline_theme='zenburn'
+colorscheme dracula
+let g:airline_theme='dracula'
 
 " May the force be with you
 nnoremap <silent> <Left> :bprev<CR>
