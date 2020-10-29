@@ -1,8 +1,8 @@
-" vim-plug (https://github.com/junegunn/vim-plug) settings 
+" vim-plug (https://github.com/junegunn/vim-plug) settings
 " Automatically install vim-plug and run PlugInstall if vim-plug not found
 if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
   silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
-	\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 
@@ -33,7 +33,6 @@ Plug 'othree/html5.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'pbrisbin/vim-mkdir'
 Plug 'posva/vim-vue'
-Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'ryanoasis/vim-devicons'
 Plug 'sheerun/vim-polyglot'
 Plug 'takac/vim-hardtime'
@@ -139,7 +138,7 @@ set wildmenu
 set t_Co=256
 set background=dark
 if (has("termguicolors"))
- set termguicolors
+  set termguicolors
 endif
 syntax enable
 let g:oceanic_next_terminal_bold = 1
@@ -173,13 +172,22 @@ let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 " Set this. Airline will handle the rest.
 let g:airline#extensions#ale#enabled = 1
 let g:ale_echo_msg_error_str         = 'E'
-let g:ale_echo_msg_warning_str       = 'W'
 let g:ale_echo_msg_format            = '[%linter%] %s [%severity%]'
-let g:ale_sign_error                 = '!'
-let g:ale_sign_warning               = '?'
-let g:ale_lint_on_text_changed       = 'never'
+let g:ale_echo_msg_warning_str       = 'W'
+let g:ale_fix_on_save                = 1
+let b:ale_linters                    = ['eslint', 'rubocop', 'stylelint']
+let g:ale_fixers                     = {
+      \ '*': ['remove_trailing_lines', 'trim_whitespace'],
+      \ 'css': ['prettier'],
+      \ 'javascript': ['prettier', 'eslint'],
+      \ 'ruby': ['rubocop'],
+      \ 'typescript': ['eslint'],
+      \ }
+let g:ale_sign_error                 = '✘'
 let g:ale_lint_on_enter              = 0
-let b:ale_linters = ['stylelint', 'rubocop']
+let g:ale_lint_on_text_changed       = 'never'
+let g:ale_sign_warning               = '⚠'
+
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
@@ -312,18 +320,6 @@ xmap ga <Plug>(EasyAlign)
 " Setup vim-vue
 autocmd FileType vue syntax sync fromstart
 autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.html.javascript.css
-
-" https://github.com/prettier/vim-prettier
-let g:prettier#autoformat = 0
-" autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
-
-" Configure UltiSnips
-" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-" If you want :UltiSnipsEdit to split your window.
-let g:UltiSnipsEditSplit="vertical"
 
 " Hardtime challenge accepted
 let g:hardtime_default_on = 1
