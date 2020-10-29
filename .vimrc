@@ -36,7 +36,6 @@ Plug 'posva/vim-vue'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'ryanoasis/vim-devicons'
 Plug 'sheerun/vim-polyglot'
-Plug 'SirVer/ultisnips'
 Plug 'takac/vim-hardtime'
 Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-commentary'
