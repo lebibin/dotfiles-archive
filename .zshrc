@@ -120,3 +120,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 if [[ "$OSTYPE" == "linux-gnu"*  ]]; then
   export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
 fi
+
+# deno hype!
+export DENO_INSTALL="/home/bbibbin/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
