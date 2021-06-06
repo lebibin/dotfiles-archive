@@ -5,7 +5,7 @@ DISABLE_AUTO_UPDATE="true"
 DISABLE_LS_COLORS="true"
 DISABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
-plugins=(bundler capistrano catimg colorize command-not-found gem git osx ssh-agent zsh-completions zsh-syntax-highlighting)
+plugins=(asdf bundler capistrano catimg colorize command-not-found gem git osx ssh-agent zsh-completions zsh-syntax-highlighting)
 autoload -U compinit && compinit
 
 export PATH="/usr/local/bin:$PATH"
@@ -29,10 +29,6 @@ export PATH="$GOPATH/bin:$PATH"
 
 # Yarn for react-native
 export PATH="$PATH:$HOME/.config/yarn/global/node_modules/.bin"
-
-# Use rbenv instead
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init - zsh)"
 
 source $ZSH/oh-my-zsh.sh
 source ~/.git-flow-completion.zsh
@@ -124,3 +120,12 @@ fi
 # deno hype!
 export DENO_INSTALL="/home/bbibbin/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
+
+# Docker configuration
+export PATH="$PATH:$HOME/.local/bin"
+
+# Replace rbenv with asdf
+. $HOME/.asdf/asdf.sh
+
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
