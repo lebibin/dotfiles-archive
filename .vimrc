@@ -35,7 +35,6 @@ Plug 'pbrisbin/vim-mkdir'
 Plug 'posva/vim-vue'
 Plug 'ryanoasis/vim-devicons'
 Plug 'sheerun/vim-polyglot'
-Plug 'takac/vim-hardtime'
 Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-endwise'
@@ -120,7 +119,7 @@ set splitbelow
 set splitright
 
 " Enable spell check
-set spell
+" set spell
 
 " Nvim shows weird symbols (�[2 q) when changing modes
 set guicursor=
