@@ -5,7 +5,7 @@ DISABLE_AUTO_UPDATE="true"
 DISABLE_LS_COLORS="true"
 DISABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
-plugins=(asdf bundler capistrano catimg colorize command-not-found gem git osx ssh-agent zsh-completions zsh-syntax-highlighting)
+plugins=(bundler capistrano catimg colorize command-not-found gem git macos ssh-agent)
 autoload -U compinit && compinit
 
 export PATH="/usr/local/bin:$PATH"
@@ -27,32 +27,16 @@ export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help";
 export GOPATH=$HOME/Code/go
 export PATH="$GOPATH/bin:$PATH"
 
-# Yarn for react-native
-export PATH="$PATH:$HOME/.config/yarn/global/node_modules/.bin"
-
 source $ZSH/oh-my-zsh.sh
 source ~/.git-flow-completion.zsh
 PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH" # Add Postgres.app to PATH
-
-### Added by the Heroku Toolbelt
-export PATH="$PATH:/usr/local/heroku/bin"
 
 # added by travis gem
 [ -f /Users/$USER/.travis/travis.sh ] && source /Users/$USER/.travis/travis.sh
 
 # Here be the aliases
 alias c='clear'
-alias cpr='bundle exec cap production mb:sidekiq:stop mb:unicorn:stop mb:unicorn:start mb:sidekiq:start'
-alias csr='bundle exec cap staging mb:sidekiq:stop mb:unicorn:stop mb:unicorn:start mb:sidekiq:start'
-alias fs='bundle exec foreman start'
-alias hrkoff='heroku ps:scale web=0'
-alias hrkon='heroku ps:scale web=1'
-alias ls='colorls -lA --sd'
-alias pp='pull && git push'
-alias pi='pod install --verbose --no-repo-update'
 alias pull='ggpur'
-alias rdm='bin/rails db:migrate && bin/rails db:migrate RAILS_ENV=test'
-alias rdr='bin/rails db:rollback && bin/rails db:rollback RAILS_ENV=test'
 
 # Thanks reddit! (͡° ͜ʖ ͡°)
 # https://www.reddit.com/r/vim/comments/42fwjx/when_vim_leaves_a_trail/cza0azv
@@ -124,8 +108,26 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 # Docker configuration
 export PATH="$PATH:$HOME/.local/bin"
 
-# Replace rbenv with asdf
-. $HOME/.asdf/asdf.sh
-
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
+
+# https://github.com/rbenv/ruby-build/issues/1691#issuecomment-772224551
+# Homebrew
+export PATH=/opt/homebrew/bin:$PATH
+export PATH="/opt/homebrew/sbin:$PATH"
+
+if command -v pyenv 1>/dev/null 2>&1; then
+    eval "$(pyenv init -)"
+fi
+
+export PATH="/usr/local/bin/:/usr/local/sbin:$PATH"
+export PATH="$(pyenv root)/shims:${PATH}"
+
+export LS_COLORS="$(vivid generate dracula)"
+
+alias ls="exa -al"
+
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl) --with-readline-dir=$(brew --prefix readline)"
+export RUBY_CFLAGS="-Wno-error=implicit-function-declaration"
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
